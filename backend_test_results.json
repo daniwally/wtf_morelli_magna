@@ -1,0 +1,154 @@
+{
+  "summary": {
+    "total_tests": 7,
+    "passed_tests": 7,
+    "failed_tests": 0,
+    "success_rate": 100.0,
+    "timestamp": "2026-03-12T13:29:35.236208"
+  },
+  "test_results": [
+    {
+      "test_name": "Root API Endpoint",
+      "method": "GET",
+      "endpoint": "/",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_time": 0.212,
+      "timestamp": "2026-03-12T13:29:34.147540",
+      "response_data": {
+        "message": "MAGNA API - Morelli Premium Kitchen"
+      }
+    },
+    {
+      "test_name": "Create Status Check",
+      "method": "POST",
+      "endpoint": "/status",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_time": 0.133,
+      "timestamp": "2026-03-12T13:29:34.281295",
+      "response_data": {
+        "id": "cd87fd46-ad86-4b8f-bd5d-de92fcddcd2c",
+        "client_name": "MAGNA_TEST_CLIENT",
+        "timestamp": "2026-03-12T13:29:34.234506Z"
+      }
+    },
+    {
+      "test_name": "Get Status Checks",
+      "method": "GET",
+      "endpoint": "/status",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_time": 0.118,
+      "timestamp": "2026-03-12T13:29:34.399566",
+      "response_data": [
+        {
+          "id": "cd87fd46-ad86-4b8f-bd5d-de92fcddcd2c",
+          "client_name": "MAGNA_TEST_CLIENT",
+          "timestamp": "2026-03-12T13:29:34.234506Z"
+        }
+      ]
+    },
+    {
+      "test_name": "Contact Form Submission (Full)",
+      "method": "POST",
+      "endpoint": "/contact",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_time": 0.351,
+      "timestamp": "2026-03-12T13:29:34.750898",
+      "response_data": {
+        "id": "0b65dd64-258c-46c8-9650-dd9f0b68473e",
+        "name": "Test User MAGNA 132934",
+        "email": "test.magna.132934@example.com",
+        "phone": "+56912345678",
+        "message": "Interesado en cotizaci\u00f3n para proyecto residencial premium",
+        "product_interest": "MAGNA 1200",
+        "language": "es",
+        "created_at": "2026-03-12T13:29:34.540381Z"
+      }
+    },
+    {
+      "test_name": "Contact Form Submission (Minimal)",
+      "method": "POST",
+      "endpoint": "/contact",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_time": 0.225,
+      "timestamp": "2026-03-12T13:29:34.976747",
+      "response_data": {
+        "id": "bf1896e4-d17b-42fe-92e9-ee42f20ae270",
+        "name": "Test Minimal 132934",
+        "email": "test.minimal.132934@example.com",
+        "phone": "+56987654321",
+        "message": "",
+        "product_interest": "",
+        "language": "pt",
+        "created_at": "2026-03-12T13:29:34.839134Z"
+      }
+    },
+    {
+      "test_name": "Contact Form Validation (Invalid)",
+      "method": "POST",
+      "endpoint": "/contact",
+      "expected_status": 422,
+      "actual_status": 422,
+      "success": true,
+      "response_time": 0.105,
+      "timestamp": "2026-03-12T13:29:35.082572",
+      "response_data": {
+        "detail": [
+          {
+            "type": "value_error",
+            "loc": [
+              "body",
+              "email"
+            ],
+            "msg": "value is not a valid email address: An email address must have an @-sign.",
+            "input": "invalid-email",
+            "ctx": {
+              "reason": "An email address must have an @-sign."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "test_name": "Get Contact Leads",
+      "method": "GET",
+      "endpoint": "/leads",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_time": 0.152,
+      "timestamp": "2026-03-12T13:29:35.235327",
+      "response_data": [
+        {
+          "id": "0b65dd64-258c-46c8-9650-dd9f0b68473e",
+          "name": "Test User MAGNA 132934",
+          "email": "test.magna.132934@example.com",
+          "phone": "+56912345678",
+          "message": "Interesado en cotizaci\u00f3n para proyecto residencial premium",
+          "product_interest": "MAGNA 1200",
+          "language": "es",
+          "created_at": "2026-03-12T13:29:34.540381Z"
+        },
+        {
+          "id": "bf1896e4-d17b-42fe-92e9-ee42f20ae270",
+          "name": "Test Minimal 132934",
+          "email": "test.minimal.132934@example.com",
+          "phone": "+56987654321",
+          "message": "",
+          "product_interest": "",
+          "language": "pt",
+          "created_at": "2026-03-12T13:29:34.839134Z"
+        }
+      ]
+    }
+  ]
+}

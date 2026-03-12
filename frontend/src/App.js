@@ -1,52 +1,61 @@
-import { useEffect } from "react";
-import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
-
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
-  return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
+import { useState, useCallback } from 'react';
+import { Toaster } from './components/ui/sonner';
+import { translations } from './translations';
+import Navigation from './components/Navigation';
+import HeroSection from './components/HeroSection';
+import ManifestoSection from './components/ManifestoSection';
+import ProductsSection from './components/ProductsSection';
+import SpecsSection from './components/SpecsSection';
+import GallerySection from './components/GallerySection';
+import ContactSection from './components/ContactSection';
+import Footer from './components/Footer';
+import './App.css';
 
 function App() {
+  const [lang, setLang] = useState('es');
+
+  // Translation helper
+  const t = useCallback((path) => {
+    const keys = path.split('.');
+    let result = translations[lang];
+    for (const key of keys) {
+      result = result?.[key];
+    }
+    return result || path;
+  }, [lang]);
+
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+    <div className="App bg-[#050505] min-h-screen" data-testid="app-container">
+      {/* Noise Overlay */}
+      <div className="noise-overlay" />
+
+      {/* Navigation */}
+      <Navigation lang={lang} setLang={setLang} t={t} />
+
+      {/* Main Content */}
+      <main>
+        <HeroSection t={t} />
+        <ManifestoSection t={t} />
+        <ProductsSection t={t} />
+        <SpecsSection t={t} />
+        <GallerySection t={t} />
+        <ContactSection t={t} lang={lang} />
+      </main>
+
+      {/* Footer */}
+      <Footer t={t} />
+
+      {/* Toast Notifications */}
+      <Toaster 
+        position="bottom-right"
+        toastOptions={{
+          style: {
+            background: '#121212',
+            border: '1px solid rgba(255,255,255,0.1)',
+            color: '#F5F5F5',
+          },
+        }}
+      />
     </div>
   );
 }
