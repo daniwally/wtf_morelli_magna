@@ -1,0 +1,185 @@
+{
+  "identity": {
+    "name": "E1 - The Anti-AI Designer",
+    "tone": "Silently Imposing (Silenciosamente Imponente)",
+    "core_principles": [
+      "Fusion over Imitation: Technical Precision + Cinematic Emotion",
+      "Content is King: The Product (MAGNA) is the Hero",
+      "Negative Space: Luxury = Space",
+      "Contrast: Light on Dark, Rough vs Smooth"
+    ]
+  },
+  "theme": {
+    "mode": "dark",
+    "strategy": "Dark Mode Luxury (No toggle, enforced dark theme for brand consistency)",
+    "background": "#050505",
+    "foreground": "#F5F5F5"
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Italiana, serif",
+      "weight": "400",
+      "usage": "Hero titles, Section headers, Product names (MAGNA 1200)",
+      "letter_spacing": "tracking-widest"
+    },
+    "subheadings": {
+      "font_family": "Playfair Display, serif",
+      "weight": "400",
+      "usage": "Manifesto text, Emotional taglines",
+      "style": "italic"
+    },
+    "body": {
+      "font_family": "Manrope, sans-serif",
+      "weight": "300",
+      "usage": "Technical specs, Form labels, Footer, Descriptions"
+    },
+    "mono": {
+      "font_family": "JetBrains Mono, monospace",
+      "usage": "Technical data points (BTU, Dimensions)"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": "#050505",
+      "secondary": "#121212",
+      "accent": "#E5E5E5",
+      "muted": "#404040",
+      "border": "#262626",
+      "success": "#10B981",
+      "error": "#EF4444"
+    },
+    "gradients": {
+      "steel": "linear-gradient(135deg, #2b2b2b 0%, #4a4a4a 50%, #2b2b2b 100%)",
+      "dark_overlay": "linear-gradient(to bottom, rgba(5,5,5,0) 0%, rgba(5,5,5,1) 100%)"
+    },
+    "rules": [
+      "NO purple/teal gradients.",
+      "Backgrounds must be SOLID or subtle noise texture.",
+      "Accents should be metallic (Silver/Steel) or pure white.",
+      "Text should never be pure white (#FFFFFF), use #F5F5F5 or #E5E5E5 for eye comfort."
+    ]
+  },
+  "layout_strategy": {
+    "container": "max-w-[1920px] mx-auto",
+    "spacing": {
+      "section_gap": "py-24 md:py-32",
+      "element_gap": "gap-8 md:gap-12"
+    },
+    "grid_system": "Bento Grid for specs, Asymmetric Grid for Gallery",
+    "modes": {
+      "hero": "Full viewport height (100dvh), centered content, video background",
+      "manifesto": "Single column, large text, scroll-triggered opacity",
+      "specs": "Dense technical grid, 1px borders, visible structure"
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Add a subtle noise overlay (opacity 0.03) to the entire background to prevent color banding and add film grain texture.",
+    "shadows": "Hard shadows or 'Glow' effects for active states. No soft blurry drop-shadows.",
+    "borders": "1px solid borders with 10% opacity for sections. 'Technical' look.",
+    "micro_interactions": "Slow, smooth transitions (0.5s ease-out). Text reveal on scroll."
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-white text-black hover:bg-gray-200 rounded-none px-8 py-4 uppercase tracking-widest text-xs font-bold transition-all",
+      "secondary": "border border-white/20 text-white hover:border-white hover:bg-white/5 rounded-none px-8 py-4 uppercase tracking-widest text-xs transition-all",
+      "icon": "rounded-full p-2 hover:bg-white/10"
+    },
+    "cards": {
+      "style": "bg-[#0A0A0A] border border-white/10 rounded-none p-8 hover:border-white/30 transition-colors",
+      "hover": "Scale 1.01, border glow"
+    },
+    "forms": {
+      "input": "bg-transparent border-b border-white/20 rounded-none px-0 py-4 text-white placeholder:text-white/30 focus:border-white focus:ring-0 transition-all",
+      "label": "text-xs uppercase tracking-widest text-white/50 mb-2"
+    },
+    "navigation": {
+      "style": "Fixed top, glassmorphism (blur-md bg-black/50), minimal height",
+      "links": "text-xs uppercase tracking-widest hover:text-white/70 transition-colors"
+    }
+  },
+  "sections_structure": [
+    {
+      "name": "Hero",
+      "type": "Video/Image Background",
+      "content": "MAGNA logo, 'Silenciosamente Imponente' tagline, Scroll indicator",
+      "height": "100vh"
+    },
+    {
+      "name": "Manifesto",
+      "type": "Text Scroll",
+      "content": "Emotional copy about luxury, silence, and power. Large serif font.",
+      "bg": "Solid Black"
+    },
+    {
+      "name": "Product Showcase",
+      "type": "Split View / Sticky",
+      "content": "MAGNA 1200 vs MAGNA 900. High-res images, key features highlight.",
+      "bg": "Dark Grey (#0A0A0A)"
+    },
+    {
+      "name": "Tech Specs",
+      "type": "Bento Grid",
+      "content": "Burner types, Oven capacity, Dimensions, Materials (Acero 304).",
+      "bg": "Black"
+    },
+    {
+      "name": "Gallery",
+      "type": "Masonry/Grid",
+      "content": "Lifestyle shots (Chef cooking, architectural integration).",
+      "bg": "Black"
+    },
+    {
+      "name": "Contact",
+      "type": "Minimal Form",
+      "content": "Name, Email, Phone, Message. CTA: 'Solicitar Asesoramiento'.",
+      "bg": "Dark Grey"
+    },
+    {
+      "name": "Footer",
+      "type": "Simple",
+      "content": "Morelli Logo, Socials, Copyright.",
+      "bg": "Black"
+    }
+  ],
+  "image_urls": {
+    "hero_bg": "https://images.unsplash.com/photo-1771627278633-c08d9693489d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBkYXJrJTIwa2l0Y2hlbiUyMGNpbmVtYXRpYyUyMGxpZ2h0aW5nfGVufDB8fHx8MTc3MzMyMTc0MXww&ixlib=rb-4.1.0&q=85",
+    "product_magna_1200": "https://images.unsplash.com/photo-1574801439983-71705fb11bc9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBzdGFpbmxlc3MlMjBzdGVlbCUyMGdhcyUyMHJhbmdlJTIwb3ZlbiUyMGRldGFpbHxlbnwwfHx8fDE3NzMzMjE3NDJ8MA&ixlib=rb-4.1.0&q=85",
+    "product_magna_900": "https://images.unsplash.com/photo-1597221829180-416a158a205b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBzdGFpbmxlc3MlMjBzdGVlbCUyMGdhcyUyMHJhbmdlJTIwb3ZlbiUyMGRldGFpbHxlbnwwfHx8fDE3NzMzMjE3NDJ8MA&ixlib=rb-4.1.0&q=85",
+    "gallery_1": "https://images.unsplash.com/photo-1724232550308-ce862f34a5bb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxnb3VybWV0JTIwY2hlZiUyMGNvb2tpbmclMjBnYXMlMjBzdG92ZSUyMGZpcmUlMjBjaW5lbWF0aWN8ZW58MHx8fHwxNzczMzIxNzU0fDA&ixlib=rb-4.1.0&q=85",
+    "gallery_2": "https://images.unsplash.com/photo-1771627278637-10eb2e9857b5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBkYXJrJTIwa2l0Y2hlbiUyMGNpbmVtYXRpYyUyMGxpZ2h0aW5nfGVufDB8fHx8MTc3MzMyMTc0MXww&ixlib=rb-4.1.0&q=85",
+    "gallery_3": "https://images.unsplash.com/photo-1658825959612-8f4bce484393?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwzfHxzdGFpbmxlc3MlMjBzdGVlbCUyMGtpdGNoZW4lMjB0ZXh0dXJlJTIwY2xvc2UlMjB1cHxlbnwwfHx8fDE3NzMzMjE3NTR8MA&ixlib=rb-4.1.0&q=85"
+  },
+  "content_copy": {
+    "hero_title": "MAGNA",
+    "hero_subtitle": "SILENCIOSAMENTE IMPONENTE",
+    "manifesto": "El verdadero lujo no grita. Se siente. MAGNA es la máxima expresión de Morelli. Donde la ingeniería profesional se encuentra con la sofisticación extrema. Diseñada para quienes entienden que la cocina no es solo un lugar, es un escenario.",
+    "cta_main": "DESCUBRIR MAGNA",
+    "cta_contact": "SOLICITAR COTIZACIÓN"
+  },
+  "motion": {
+    "library": "framer-motion",
+    "viewport_once": true,
+    "entrance": {
+      "initial": { "opacity": 0, "y": 20 },
+      "whileInView": { "opacity": 1, "y": 0 },
+      "transition": { "duration": 0.8, "ease": "easeOut" }
+    },
+    "scroll": {
+      "library": "lenis",
+      "description": "Smooth scrolling is MANDATORY. Use 'lenis' for that premium 'heavy' scroll feel."
+    }
+  },
+  "tech_stack_instructions": {
+    "framework": "React + Vite",
+    "styling": "Tailwind CSS",
+    "components": "Shadcn UI (Customized for Dark Mode)",
+    "icons": "Lucide React (Minimal strokes)"
+  },
+  "universal_guidelines": [
+    "Do NOT use default shadcn card styles. Remove shadows, use borders.",
+    "Ensure all text has sufficient contrast (APCA compliant).",
+    "Use 'data-testid' on all interactive elements.",
+    "Images must be lazy-loaded.",
+    "No gradients. Flat colors or textures only."
+  ]
+}
