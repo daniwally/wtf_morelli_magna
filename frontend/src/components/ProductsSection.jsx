@@ -5,7 +5,7 @@ const ProductsSection = ({ t }) => {
   const products = [
     {
       id: 'magna1200',
-      image: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/ptns1fx3_Product_Photography_Argentina_A_modern_kitchen_features_rich_wood_cabinetry_and_sUA7uljc.png',
+      image: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/8moblwzl_Product_Photography_Argentina_A_high-end_kitchen_features_sage_green_cabinetry_LcmHSMtz.png',
       specs: {
         width: '120 cm',
         burners: '6',
