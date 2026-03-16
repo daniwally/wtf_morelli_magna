@@ -5,7 +5,7 @@ const ProductsSection = ({ t }) => {
   const products = [
     {
       id: 'magna1200',
-      image: 'https://images.unsplash.com/photo-1574801439983-71705fb11bc9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBzdGFpbmxlc3MlMjBzdGVlbCUyMGdhcyUyMHJhbmdlJTIwb3ZlbiUyMGRldGFpbHxlbnwwfHx8fDE3NzMzMjE3NDJ8MA&ixlib=rb-4.1.0&q=85',
+      image: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/ptns1fx3_Product_Photography_Argentina_A_modern_kitchen_features_rich_wood_cabinetry_and_sUA7uljc.png',
       specs: {
         width: '120 cm',
         burners: '6',
@@ -14,7 +14,7 @@ const ProductsSection = ({ t }) => {
     },
     {
       id: 'magna900',
-      image: 'https://images.unsplash.com/photo-1597221829180-416a158a205b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBzdGFpbmxlc3MlMjBzdGVlbCUyMGdhcyUyMHJhbmdlJTIwb3ZlbiUyMGRldGFpbHxlbnwwfHx8fDE3NzMzMjE3NDJ8MA&ixlib=rb-4.1.0&q=85',
+      image: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/calnult7_Product_Photography_Argentina_42V-oX53.png',
       specs: {
         width: '87 cm',
         burners: '6',
