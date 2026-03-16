@@ -69,7 +69,7 @@ const HeroSection = ({ t }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
           onClick={scrollToManifesto}
-          className="bg-white text-black px-10 py-4 text-xs uppercase tracking-[0.3em] font-medium hover:bg-[#E5E5E5] transition-all duration-300 border-0"
+          className="absolute bottom-32 bg-white text-black px-10 py-4 text-xs uppercase tracking-[0.3em] font-medium hover:bg-[#E5E5E5] transition-all duration-300 border-0"
           data-testid="hero-cta"
         >
           {t('hero.cta')}
