@@ -20,7 +20,7 @@ const ManifestoSection = ({ t }) => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.8 }}
-          className="font-playfair italic text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center text-[#F5F5F5] leading-tight mb-16 md:mb-24"
+          className="font-playfair italic text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center text-[#F5F5F5] leading-tight mb-16 md:mb-24 whitespace-nowrap"
           data-testid="manifesto-title"
         >
           {t('manifesto.title')}
