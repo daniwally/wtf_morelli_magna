@@ -28,7 +28,7 @@ const HeroSection = ({ t }) => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex flex-col items-center justify-center px-6">
+      <div className="relative z-10 h-full flex flex-col items-center justify-start pt-32 md:pt-40 px-6">
         {/* Morelli Logo */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
