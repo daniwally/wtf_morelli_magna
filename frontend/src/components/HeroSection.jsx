@@ -18,9 +18,9 @@ const HeroSection = ({ t }) => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1771627278633-c08d9693489d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBkYXJrJTIwa2l0Y2hlbiUyMGNpbmVtYXRpYyUyMGxpZ2h0aW5nfGVufDB8fHx8MTc3MzMyMTc0MXww&ixlib=rb-4.1.0&q=85"
+          src="https://customer-assets.emergentagent.com/job_magna-premium/artifacts/rronr59c_Product_Photography_Argentina_sUA7uljc.png"
           alt="MAGNA Kitchen"
-          className="w-full h-full object-cover opacity-50"
+          className="w-full h-full object-cover opacity-70"
           loading="eager"
         />
         {/* Gradient Overlay */}
