@@ -6,7 +6,7 @@ const ManifestoSection = ({ t }) => {
   return (
     <section
       id="manifesto"
-      className="relative py-32 md:py-48 bg-[#050505] overflow-hidden"
+      className="relative py-24 md:py-32 bg-[#050505] overflow-hidden"
       data-testid="manifesto-section"
     >
       {/* Decorative Elements */}
@@ -27,7 +27,7 @@ const ManifestoSection = ({ t }) => {
         </motion.h2>
 
         {/* Manifesto Content */}
-        <div className="space-y-8 md:space-y-12">
+        <div className="space-y-4 md:space-y-6">
           {manifestoContent.map((paragraph, index) => (
             <motion.p
               key={index}
@@ -35,7 +35,7 @@ const ManifestoSection = ({ t }) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.8, delay: index * 0.15 }}
-              className="font-manrope text-lg sm:text-xl md:text-2xl text-[#E5E5E5]/80 leading-relaxed text-center font-light"
+              className="font-manrope text-lg sm:text-xl md:text-2xl text-[#E5E5E5]/80 leading-snug text-center font-light"
               data-testid={`manifesto-paragraph-${index}`}
             >
               {paragraph}
@@ -49,9 +49,9 @@ const ManifestoSection = ({ t }) => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-20 md:mt-32 text-center"
+          className="mt-12 md:mt-16 text-center"
         >
-          <div className="w-16 h-px bg-white/30 mx-auto mb-8" />
+          <div className="w-16 h-px bg-white/30 mx-auto mb-6" />
           <p
             className="font-italiana text-lg sm:text-xl md:text-2xl tracking-[0.3em] uppercase text-[#E5E5E5]/60"
             data-testid="manifesto-tagline"

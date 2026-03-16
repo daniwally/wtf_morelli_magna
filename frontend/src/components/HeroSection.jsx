@@ -57,7 +57,7 @@ const HeroSection = ({ t }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="text-xs sm:text-sm uppercase tracking-[0.4em] text-[#E5E5E5]/80 mb-12 text-center"
+          className="text-base sm:text-xl md:text-2xl uppercase tracking-[0.5em] text-[#E5E5E5]/90 mb-12 text-center font-light"
           data-testid="hero-subtitle"
         >
           {t('hero.subtitle')}
