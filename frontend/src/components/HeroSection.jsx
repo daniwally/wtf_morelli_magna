@@ -15,14 +15,17 @@ const HeroSection = ({ t }) => {
       className="relative h-screen w-full overflow-hidden bg-[#050505]"
       data-testid="hero-section"
     >
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0">
-        <img
-          src="https://customer-assets.emergentagent.com/job_magna-premium/artifacts/jdbvy56m_Product_Photography_Argentina_In_a_modern_industrial_style_a_4edxpDLE.png"
-          alt="MAGNA Kitchen"
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
           className="w-full h-full object-cover opacity-70"
-          loading="eager"
-        />
+        >
+          <source src="https://customer-assets.emergentagent.com/job_magna-premium/artifacts/p0o9wuia_Product_Photography_Argentina_z0NP2wLb.mp4" type="video/mp4" />
+        </video>
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black" />
       </div>
