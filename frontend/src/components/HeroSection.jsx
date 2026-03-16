@@ -18,7 +18,7 @@ const HeroSection = ({ t }) => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://customer-assets.emergentagent.com/job_magna-premium/artifacts/5n85jn7y_Product_Photography_Argentina_M6W_JYnM.png"
+          src="https://customer-assets.emergentagent.com/job_magna-premium/artifacts/jdbvy56m_Product_Photography_Argentina_In_a_modern_industrial_style_a_4edxpDLE.png"
           alt="MAGNA Kitchen"
           className="w-full h-full object-cover opacity-70"
           loading="eager"

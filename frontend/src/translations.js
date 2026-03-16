@@ -19,11 +19,7 @@ export const translations = {
     manifesto: {
       title: "El verdadero lujo no grita. Se siente.",
       content: [
-        "MAGNA es la máxima expresión de Morelli.",
-        "Donde la ingeniería profesional se encuentra con la sofisticación extrema.",
-        "Diseñada para quienes entienden que la cocina no es solo un lugar, es un escenario.",
-        "No necesita convencer. Su presencia en un espacio lo transforma.",
-        "Su calidad no se explica, se siente. Su carácter no se impone, se reconoce.",
+        "MAGNA es la máxima expresión de Morelli. Donde la ingeniería profesional se encuentra con la sofisticación extrema. Diseñada para quienes entienden que la cocina no es solo un lugar, es un escenario. No necesita convencer. Su presencia en un espacio lo transforma. Su calidad no se explica, se siente. Su carácter no se impone, se reconoce.",
       ],
       tagline: "Profesional por origen. Premium por ejecución.",
     },
@@ -139,11 +135,7 @@ export const translations = {
     manifesto: {
       title: "O verdadeiro luxo não grita. Se sente.",
       content: [
-        "MAGNA é a máxima expressão da Morelli.",
-        "Onde a engenharia profissional encontra a sofisticação extrema.",
-        "Projetada para quem entende que a cozinha não é apenas um lugar, é um palco.",
-        "Não precisa convencer. Sua presença em um espaço o transforma.",
-        "Sua qualidade não se explica, se sente. Seu caráter não se impõe, se reconhece.",
+        "MAGNA é a máxima expressão da Morelli. Onde a engenharia profissional encontra a sofisticação extrema. Projetada para quem entende que a cozinha não é apenas um lugar, é um palco. Não precisa convencer. Sua presença em um espaço o transforma. Sua qualidade não se explica, se sente. Seu caráter não se impõe, se reconhece.",
       ],
       tagline: "Profissional por origem. Premium por execução.",
     },
