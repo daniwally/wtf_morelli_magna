@@ -14,7 +14,7 @@ const ProductsSection = ({ t }) => {
     },
     {
       id: 'magna900',
-      image: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/calnult7_Product_Photography_Argentina_42V-oX53.png',
+      image: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/qwj4dn3m_Product_Photography_Argentina_In_a_modern_industrial_style_a_4edxpDLE%20%281%29.png',
       specs: {
         width: '87 cm',
         burners: '6',
@@ -37,7 +37,7 @@ const ProductsSection = ({ t }) => {
       data-testid="products-section"
     >
       {/* Section Header */}
-      <div className="max-w-[1920px] mx-auto px-6 md:px-12 mb-16 md:mb-24">
+      <div className="max-w-[1920px] mx-auto px-6 md:px-12 mb-8 md:mb-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
