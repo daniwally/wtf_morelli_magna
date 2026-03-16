@@ -49,7 +49,7 @@ const ProductsSection = ({ t }) => {
             {t('products.title')}
           </span>
           <h2
-            className="font-italiana text-4xl sm:text-5xl md:text-6xl tracking-[0.15em] text-[#F5F5F5]"
+            className="font-playfair italic text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#F5F5F5]"
             data-testid="products-title"
           >
             {t('products.subtitle')}
