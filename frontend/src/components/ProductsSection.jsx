@@ -14,7 +14,7 @@ const ProductsSection = ({ t }) => {
     },
     {
       id: 'magna900',
-      image: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/qwj4dn3m_Product_Photography_Argentina_In_a_modern_industrial_style_a_4edxpDLE%20%281%29.png',
+      image: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/pj3vuuzk_Product_Photography_Argentina_A_modern_kitchen_features_rich_wood_cabinetry_and_sUA7uljc.png',
       specs: {
         width: '87 cm',
         burners: '6',
