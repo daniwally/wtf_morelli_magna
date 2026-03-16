@@ -231,6 +231,122 @@ export const translations = {
       terms: "Termos",
     },
   },
+  en: {
+    // Navigation
+    nav: {
+      manifesto: "Manifesto",
+      products: "Products",
+      specs: "Specifications",
+      gallery: "Gallery",
+      contact: "Contact",
+    },
+    // Hero
+    hero: {
+      title: "MAGNA",
+      subtitle: "SILENTLY IMPOSING",
+      cta: "DISCOVER MAGNA",
+      scroll: "Scroll to explore",
+    },
+    // Manifesto
+    manifesto: {
+      title: "True luxury doesn't shout. It's felt.",
+      content: [
+        "MAGNA is the ultimate expression of Morelli. Where professional engineering meets extreme sophistication. Designed for those who understand that the kitchen is not just a place, it's a stage. It doesn't need to convince. Its presence transforms a space. Its quality isn't explained, it's felt. Its character isn't imposed, it's recognized.",
+      ],
+      tagline: "Professional by origin. Premium by execution.",
+    },
+    // Products
+    products: {
+      title: "THE LINE",
+      subtitle: "Two expressions of excellence",
+      magna1200: {
+        name: "MAGNA 1200",
+        description: "120 cm of absolute mastery. The ultimate expression of professional culinary power in the domestic realm.",
+        features: [
+          "6 Sabaf professional burners",
+          "Gas oven with Neapolitan refractory stone",
+          "Electric turbo convection Airfryer oven",
+          "Griddle plate with U-shaped burner",
+        ],
+      },
+      magna900: {
+        name: "MAGNA 900",
+        description: "87 cm of refined precision. All the professional character in an optimized format.",
+        features: [
+          "6 Sabaf professional burners",
+          "97-liter gas oven",
+          "Neapolitan refractory stone included",
+          "Upper electric grill",
+        ],
+      },
+      cta: "VIEW SPECIFICATIONS",
+    },
+    // Specs
+    specs: {
+      title: "SPECIFICATIONS",
+      subtitle: "Technical precision",
+      categories: {
+        dimensions: "Dimensions",
+        power: "Power",
+        materials: "Materials",
+        features: "Features",
+      },
+      items: {
+        width: "Width",
+        depth: "Depth",
+        height: "Height",
+        burners: "Burners",
+        ovenCapacity: "Oven Capacity",
+        maxTemp: "Max Temp.",
+        material: "Stainless Steel 304",
+        burnerType: "Sabaf Aluminum",
+        grates: "Cast Iron",
+        coating: "Ceramic Easy Clean",
+        ignition: "Electric Ignition",
+        safetyValve: "Safety Valve",
+        gasType: "LPG/NG Compatible",
+        warranty: "Extended Warranty",
+      },
+    },
+    // Gallery
+    gallery: {
+      title: "GALLERY",
+      subtitle: "Where fire obeys",
+    },
+    // Contact
+    contact: {
+      title: "EXCLUSIVE CONSULTATION",
+      subtitle: "Begin your MAGNA experience",
+      form: {
+        name: "Full name",
+        email: "Email",
+        phone: "Phone",
+        product: "Product of interest",
+        selectProduct: "Select a product",
+        message: "Message (optional)",
+        messagePlaceholder: "Tell us about your project...",
+        submit: "REQUEST QUOTE",
+        submitting: "SENDING...",
+        success: "Request sent successfully",
+        successMessage: "We will contact you soon.",
+        error: "Error sending",
+        errorMessage: "Please try again later.",
+      },
+      products: {
+        magna1200: "MAGNA 1200",
+        magna900: "MAGNA 900",
+        both: "Both models",
+        undecided: "Not yet decided",
+      },
+    },
+    // Footer
+    footer: {
+      tagline: "Professional by origin. Premium by execution.",
+      rights: "All rights reserved.",
+      privacy: "Privacy",
+      terms: "Terms",
+    },
+  },
 };
 
 export const getTranslation = (lang, path) => {

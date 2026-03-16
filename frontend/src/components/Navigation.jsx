@@ -92,6 +92,16 @@ const Navigation = ({ lang, setLang, t }) => {
                 >
                   PT
                 </button>
+                <span className="text-[#E5E5E5]/30">/</span>
+                <button
+                  onClick={() => setLang('en')}
+                  className={`text-xs uppercase tracking-widest transition-colors ${
+                    lang === 'en' ? 'text-white' : 'text-[#E5E5E5]/50 hover:text-[#E5E5E5]'
+                  }`}
+                  data-testid="lang-en"
+                >
+                  EN
+                </button>
               </div>
             </div>
 
@@ -148,7 +158,7 @@ const Navigation = ({ lang, setLang, t }) => {
                   }`}
                   data-testid="mobile-lang-es"
                 >
-                  Español
+                  ES
                 </button>
                 <button
                   onClick={() => {
@@ -162,7 +172,21 @@ const Navigation = ({ lang, setLang, t }) => {
                   }`}
                   data-testid="mobile-lang-pt"
                 >
-                  Português
+                  PT
+                </button>
+                <button
+                  onClick={() => {
+                    setLang('en');
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className={`text-sm uppercase tracking-widest px-4 py-2 border transition-all ${
+                    lang === 'en'
+                      ? 'border-white text-white'
+                      : 'border-white/30 text-[#E5E5E5]/50'
+                  }`}
+                  data-testid="mobile-lang-en"
+                >
+                  EN
                 </button>
               </div>
             </div>
