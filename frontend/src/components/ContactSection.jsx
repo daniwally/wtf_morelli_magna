@@ -116,7 +116,7 @@ const ContactSection = ({ t, lang }) => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="bg-transparent border-0 border-b border-white/20 rounded-none px-0 py-4 text-white placeholder:text-white/30 focus:border-white focus:ring-0 transition-all"
+              className="bg-white/5 border border-white/30 rounded-none px-4 py-4 text-white placeholder:text-white/30 focus:border-white focus:bg-white/10 focus:ring-0 transition-all"
               data-testid="contact-name"
             />
           </div>
@@ -132,7 +132,7 @@ const ContactSection = ({ t, lang }) => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="bg-transparent border-0 border-b border-white/20 rounded-none px-0 py-4 text-white placeholder:text-white/30 focus:border-white focus:ring-0 transition-all"
+              className="bg-white/5 border border-white/30 rounded-none px-4 py-4 text-white placeholder:text-white/30 focus:border-white focus:bg-white/10 focus:ring-0 transition-all"
               data-testid="contact-email"
             />
           </div>
@@ -148,7 +148,7 @@ const ContactSection = ({ t, lang }) => {
               value={formData.phone}
               onChange={handleChange}
               required
-              className="bg-transparent border-0 border-b border-white/20 rounded-none px-0 py-4 text-white placeholder:text-white/30 focus:border-white focus:ring-0 transition-all"
+              className="bg-white/5 border border-white/30 rounded-none px-4 py-4 text-white placeholder:text-white/30 focus:border-white focus:bg-white/10 focus:ring-0 transition-all"
               data-testid="contact-phone"
             />
           </div>
@@ -160,7 +160,7 @@ const ContactSection = ({ t, lang }) => {
             </label>
             <Select value={formData.product_interest} onValueChange={handleProductChange}>
               <SelectTrigger 
-                className="bg-transparent border-0 border-b border-white/20 rounded-none px-0 py-4 text-white focus:ring-0 h-auto text-xs uppercase tracking-[0.2em]"
+                className="bg-white/5 border border-white/30 rounded-none px-4 py-4 text-white focus:ring-0 h-auto text-xs uppercase tracking-[0.2em] focus:border-white focus:bg-white/10"
                 data-testid="contact-product-select"
               >
                 <SelectValue placeholder={t('contact.form.selectProduct')} className="text-xs uppercase tracking-[0.2em] text-[#E5E5E5]/50" />
@@ -191,7 +191,7 @@ const ContactSection = ({ t, lang }) => {
               onChange={handleChange}
               placeholder={t('contact.form.messagePlaceholder')}
               rows={4}
-              className="bg-transparent border-0 border-b border-white/20 rounded-none px-0 py-4 text-white placeholder:text-white/30 focus:border-white focus:ring-0 transition-all resize-none"
+              className="bg-white/5 border border-white/30 rounded-none px-4 py-4 text-white placeholder:text-white/30 focus:border-white focus:bg-white/10 focus:ring-0 transition-all resize-none"
               data-testid="contact-message"
             />
           </div>
