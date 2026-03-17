@@ -11,13 +11,13 @@ const GallerySection = ({ t }) => {
     {
       src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/szz6qoe2_Product_Photography_Argentina_6MI5DyGd.png',
       alt: 'MAGNA Detail',
-      model: 'MAGNA 1200',
+      model: 'MAGNA 900',
       className: '',
     },
     {
       src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/fic20law_Product_Photography_Argentina_yGUtxOW0.png',
       alt: 'MAGNA Cooking',
-      model: 'MAGNA 900',
+      model: 'MAGNA 1200',
       className: '',
     },
     {
@@ -35,7 +35,7 @@ const GallerySection = ({ t }) => {
     {
       src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/i4g5ttso_Product_Photography_Argentina_s3K2u0w5.png',
       alt: 'MAGNA Lifestyle',
-      model: 'MAGNA 1200',
+      model: 'MAGNA 900',
       className: '',
     },
     {
