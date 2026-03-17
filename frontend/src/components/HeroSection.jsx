@@ -8,6 +8,7 @@ const HeroSection = ({ t }) => {
     'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/qpoarrow_Product_Photography_Argentina_31QpXmrA.mp4'
   ];
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const randomVideo = useMemo(() => videos[Math.floor(Math.random() * videos.length)], []);
 
   const scrollToManifesto = () => {
