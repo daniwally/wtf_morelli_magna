@@ -1,76 +1,72 @@
 # MAGNA Microsite - Morelli Premium Kitchen
 
 ## Descripción
-Microsite premium para la línea MAGNA de Morelli. Concepto: "Silenciosamente Imponente".
+Landing page premium para la línea MAGNA de Morelli. Concepto: "Silenciosamente Imponente".
 
 ## Tech Stack
 - **Frontend**: React + Tailwind CSS + Framer Motion + Shadcn UI
-- **Backend**: FastAPI + MongoDB + Resend
+- **Formulario**: Formspree (envío directo a email)
 - **Idiomas**: Español, Portugués, Inglés
 
-## Estructura del Proyecto
-```
-/app
-├── backend/          # FastAPI backend
-│   ├── server.py     # API principal
-│   ├── requirements.txt
-│   └── .env          # Variables de entorno
-├── frontend/         # React frontend
-│   ├── src/
-│   │   ├── components/   # Componentes React
-│   │   ├── translations.js
-│   │   └── App.js
-│   └── package.json
-```
+## Deploy
 
-## Variables de Entorno
+### Railway
+1. Conectá tu repo de GitHub a Railway
+2. Seleccioná la carpeta `/frontend`
+3. Railway detectará automáticamente el proyecto React
+4. ¡Listo! No necesita variables de entorno
 
-### Backend (.env)
-```
-MONGO_URL=mongodb://...
-DB_NAME=magna_db
-RESEND_API_KEY=re_xxxxx
-SENDER_EMAIL=onboarding@resend.dev
-RECIPIENT_EMAIL=valeria@wtf-agency.com
-```
+### Vercel
+1. Importá el repo desde GitHub
+2. Configurá el Root Directory como `frontend`
+3. Deploy automático
 
-### Frontend (.env)
-```
-REACT_APP_BACKEND_URL=https://your-backend-url.com
-```
+### Netlify
+1. Conectá el repo de GitHub
+2. Build command: `yarn build`
+3. Publish directory: `frontend/build`
 
-## Deploy en Railway
+## Configuración del Formulario
 
-### 1. Crear servicios en Railway:
-- **MongoDB**: Agregar servicio de base de datos MongoDB
-- **Backend**: Deploy desde `/backend` folder
-- **Frontend**: Deploy desde `/frontend` folder
-
-### 2. Configurar variables de entorno en cada servicio
-
-### 3. Conectar servicios internamente
+El formulario usa Formspree. Para cambiar el email de destino:
+1. Andá a [formspree.io](https://formspree.io)
+2. Creá una cuenta y un nuevo form
+3. Reemplazá el ID en `ContactSection.jsx`:
+   ```js
+   fetch('https://formspree.io/f/TU_FORM_ID', {
+   ```
 
 ## Desarrollo Local
 
-### Backend
-```bash
-cd backend
-pip install -r requirements.txt
-uvicorn server:app --reload --port 8001
-```
-
-### Frontend
 ```bash
 cd frontend
 yarn install
 yarn start
 ```
 
+## Estructura
+```
+frontend/
+├── src/
+│   ├── components/
+│   │   ├── Navigation.jsx
+│   │   ├── HeroSection.jsx
+│   │   ├── ManifestoSection.jsx
+│   │   ├── ProductsSection.jsx
+│   │   ├── SpecsSection.jsx
+│   │   ├── GallerySection.jsx
+│   │   ├── ContactSection.jsx
+│   │   └── Footer.jsx
+│   ├── translations.js
+│   └── App.js
+└── package.json
+```
+
 ## Funcionalidades
 - Hero con video aleatorio
 - Manifiesto de marca
 - Showcase de productos MAGNA 1200 y MAGNA 900
-- Especificaciones técnicas
+- Especificaciones técnicas con tabs
 - Galería con hover mostrando modelo
-- Formulario de contacto con envío de email
+- Formulario de contacto (Formspree → email)
 - Selector de idioma (ES/PT/EN)

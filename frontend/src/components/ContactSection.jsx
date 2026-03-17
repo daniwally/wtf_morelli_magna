@@ -1,13 +1,9 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import axios from 'axios';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select';
 import { toast } from 'sonner';
-
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
 
 const ContactSection = ({ t, lang }) => {
   const [formData, setFormData] = useState({
@@ -33,23 +29,32 @@ const ContactSection = ({ t, lang }) => {
     setIsSubmitting(true);
 
     try {
-      await axios.post(`${API}/contact`, {
-        ...formData,
-        language: lang,
+      const response = await fetch('https://formspree.io/f/xwpewpvj', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          language: lang,
+          _subject: `Nuevo Lead MAGNA - ${formData.name}`,
+        }),
       });
 
-      toast.success(t('contact.form.success'), {
-        description: t('contact.form.successMessage'),
-      });
-
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        product_interest: '',
-        message: '',
-      });
+      if (response.ok) {
+        toast.success(t('contact.form.success'), {
+          description: t('contact.form.successMessage'),
+        });
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          product_interest: '',
+          message: '',
+        });
+      } else {
+        throw new Error('Form submission failed');
+      }
     } catch (error) {
       console.error('Contact form error:', error);
       toast.error(t('contact.form.error'), {
