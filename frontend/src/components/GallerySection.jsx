@@ -5,7 +5,7 @@ const GallerySection = ({ t }) => {
     {
       src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/4q1oztdx_Product_Photography_Argentina_PFZvby25.png',
       alt: 'MAGNA Kitchen',
-      className: 'md:col-span-2 md:row-span-2',
+      className: 'md:col-span-2',
     },
     {
       src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/szz6qoe2_Product_Photography_Argentina_6MI5DyGd.png',
@@ -25,12 +25,12 @@ const GallerySection = ({ t }) => {
     {
       src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/1g15jpn5_Product_Photography_Argentina_I9EV2Ykc.png',
       alt: 'MAGNA Design',
-      className: 'md:col-span-2',
+      className: '',
     },
     {
       src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/i4g5ttso_Product_Photography_Argentina_s3K2u0w5.png',
       alt: 'MAGNA Lifestyle',
-      className: '',
+      className: 'md:col-span-2',
     },
     {
       src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/chpjpf5e_Product_Photography_Argentina_7L3du-cG.png',
