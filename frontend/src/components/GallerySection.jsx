@@ -3,28 +3,28 @@ import { motion } from 'framer-motion';
 const GallerySection = ({ t }) => {
   const galleryImages = [
     {
-      src: 'https://images.unsplash.com/photo-1724232550308-ce862f34a5bb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxnb3VybWV0JTIwY2hlZiUyMGNvb2tpbmclMjBnYXMlMjBzdG92ZSUyMGZpcmUlMjBjaW5lbWF0aWN8ZW58MHx8fHwxNzczMzIxNzU0fDA&ixlib=rb-4.1.0&q=85',
-      alt: 'Chef cooking on MAGNA',
+      src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/4q1oztdx_Product_Photography_Argentina_PFZvby25.png',
+      alt: 'MAGNA Kitchen',
       className: 'md:col-span-2 md:row-span-2',
     },
     {
-      src: 'https://images.unsplash.com/photo-1771627278637-10eb2e9857b5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBkYXJrJTIwa2l0Y2hlbiUyMGNpbmVtYXRpYyUyMGxpZ2h0aW5nfGVufDB8fHx8MTc3MzMyMTc0MXww&ixlib=rb-4.1.0&q=85',
-      alt: 'Luxury dark kitchen',
+      src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/szz6qoe2_Product_Photography_Argentina_6MI5DyGd.png',
+      alt: 'MAGNA Detail',
       className: '',
     },
     {
-      src: 'https://images.unsplash.com/photo-1658825959612-8f4bce484393?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwzfHxzdGFpbmxlc3MlMjBzdGVlbCUyMGtpdGNoZW4lMjB0ZXh0dXJlJTIwY2xvc2UlMjB1cHxlbnwwfHx8fDE3NzMzMjE3NTR8MA&ixlib=rb-4.1.0&q=85',
-      alt: 'Stainless steel detail',
+      src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/fic20law_Product_Photography_Argentina_yGUtxOW0.png',
+      alt: 'MAGNA Cooking',
       className: '',
     },
     {
-      src: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800',
-      alt: 'Professional cooking',
+      src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/ovu3kv81_Product_Photography_Argentina_LULpfrPk.png',
+      alt: 'MAGNA Interior',
       className: '',
     },
     {
-      src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
-      alt: 'Modern kitchen interior',
+      src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/1g15jpn5_Product_Photography_Argentina_I9EV2Ykc.png',
+      alt: 'MAGNA Design',
       className: 'md:col-span-2',
     },
   ];
