@@ -55,6 +55,11 @@ const GallerySection = ({ t }) => {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
+          <img 
+            src="https://customer-assets.emergentagent.com/job_magna-premium/artifacts/aapvpbx3_logo-morelli.png" 
+            alt="Morelli" 
+            className="h-12 md:h-16 mx-auto mb-6 object-contain"
+          />
           <h2
             className="font-playfair italic text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#F5F5F5] mb-6"
             data-testid="gallery-title"
