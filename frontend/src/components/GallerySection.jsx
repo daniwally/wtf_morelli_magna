@@ -38,12 +38,6 @@ const GallerySection = ({ t }) => {
       model: 'MAGNA 900',
       className: '',
     },
-    {
-      src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/chpjpf5e_Product_Photography_Argentina_7L3du-cG.png',
-      alt: 'MAGNA Premium',
-      model: 'MAGNA 900',
-      className: 'md:col-start-2',
-    },
   ];
 
   return (
