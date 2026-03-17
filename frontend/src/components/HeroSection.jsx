@@ -39,7 +39,7 @@ const HeroSection = ({ t }) => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-8"
         >
-          <span className="text-xs uppercase tracking-[0.4em] text-[#E5E5E5]/60 font-manrope">
+          <span className="text-sm uppercase tracking-[0.5em] text-[#E5E5E5]/60 font-manrope">
             Morelli
           </span>
         </motion.div>
