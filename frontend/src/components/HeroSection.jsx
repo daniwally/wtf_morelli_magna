@@ -1,7 +1,15 @@
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
+import { useMemo } from 'react';
 
 const HeroSection = ({ t }) => {
+  const videos = [
+    'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/p0o9wuia_Product_Photography_Argentina_z0NP2wLb.mp4',
+    'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/qpoarrow_Product_Photography_Argentina_31QpXmrA.mp4'
+  ];
+
+  const randomVideo = useMemo(() => videos[Math.floor(Math.random() * videos.length)], []);
+
   const scrollToManifesto = () => {
     const element = document.querySelector('#manifesto');
     if (element) {
@@ -23,8 +31,9 @@ const HeroSection = ({ t }) => {
           loop
           playsInline
           className="w-full h-full object-cover opacity-70"
+          key={randomVideo}
         >
-          <source src="https://customer-assets.emergentagent.com/job_magna-premium/artifacts/p0o9wuia_Product_Photography_Argentina_z0NP2wLb.mp4" type="video/mp4" />
+          <source src={randomVideo} type="video/mp4" />
         </video>
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black" />
