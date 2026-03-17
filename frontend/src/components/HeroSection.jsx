@@ -49,9 +49,11 @@ const HeroSection = ({ t }) => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-8"
         >
-          <span className="text-base md:text-lg uppercase tracking-[0.5em] text-[#E5E5E5]/60 font-manrope">
-            Morelli
-          </span>
+          <img 
+            src="https://customer-assets.emergentagent.com/job_magna-premium/artifacts/aapvpbx3_logo-morelli.png" 
+            alt="Morelli" 
+            className="h-8 md:h-12 object-contain"
+          />
         </motion.div>
 
         {/* Main Title */}
