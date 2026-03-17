@@ -13,7 +13,6 @@ const ContactSection = ({ t, lang }) => {
     product_interest: '',
     message: '',
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,45 +23,29 @@ const ContactSection = ({ t, lang }) => {
     setFormData((prev) => ({ ...prev, product_interest: value }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setIsSubmitting(true);
+    
+    const subject = encodeURIComponent(`Consulta MAGNA - ${formData.name}`);
+    const body = encodeURIComponent(
+`Nuevo contacto desde el sitio MAGNA
 
-    try {
-      const response = await fetch('https://formspree.io/f/xwpewpvj', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          ...formData,
-          language: lang,
-          _subject: `Nuevo Lead MAGNA - ${formData.name}`,
-        }),
-      });
+Nombre: ${formData.name}
+Email: ${formData.email}
+Teléfono: ${formData.phone}
+Producto de interés: ${formData.product_interest || 'No especificado'}
+Idioma: ${lang === 'es' ? 'Español' : lang === 'pt' ? 'Português' : 'English'}
 
-      if (response.ok) {
-        toast.success(t('contact.form.success'), {
-          description: t('contact.form.successMessage'),
-        });
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          product_interest: '',
-          message: '',
-        });
-      } else {
-        throw new Error('Form submission failed');
-      }
-    } catch (error) {
-      console.error('Contact form error:', error);
-      toast.error(t('contact.form.error'), {
-        description: t('contact.form.errorMessage'),
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
+Mensaje:
+${formData.message || 'Sin mensaje adicional'}
+`
+    );
+    
+    window.location.href = `mailto:valeria@wtf-agency.com?subject=${subject}&body=${body}`;
+    
+    toast.success(t('contact.form.success'), {
+      description: t('contact.form.successMessage'),
+    });
   };
 
   const productOptions = [
@@ -204,13 +187,13 @@ const ContactSection = ({ t, lang }) => {
           {/* Submit Button */}
           <motion.button
             type="submit"
-            disabled={isSubmitting}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="w-full bg-white text-black py-5 text-xs uppercase tracking-[0.3em] font-medium hover:bg-[#E5E5E5] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed mt-12"
+            className="w-full bg-white text-black py-5 text-xs uppercase tracking-[0.3em] font-medium hover:bg-[#E5E5E5] transition-all duration-300 mt-12"
             data-testid="contact-submit"
           >
-            {isSubmitting ? t('contact.form.submitting') : t('contact.form.submit')}
+            {t('contact.form.submit')}
+          </motion.button>
           </motion.button>
         </motion.form>
       </div>
