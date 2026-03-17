@@ -194,7 +194,6 @@ ${formData.message || 'Sin mensaje adicional'}
           >
             {t('contact.form.submit')}
           </motion.button>
-          </motion.button>
         </motion.form>
       </div>
 
