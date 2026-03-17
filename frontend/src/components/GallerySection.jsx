@@ -29,13 +29,13 @@ const GallerySection = ({ t }) => {
     {
       src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/1g15jpn5_Product_Photography_Argentina_I9EV2Ykc.png',
       alt: 'MAGNA Design',
-      model: 'MAGNA 1200',
+      model: 'MAGNA 900',
       className: '',
     },
     {
       src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/i4g5ttso_Product_Photography_Argentina_s3K2u0w5.png',
       alt: 'MAGNA Lifestyle',
-      model: 'MAGNA 900',
+      model: 'MAGNA 1200',
       className: '',
     },
   ];
