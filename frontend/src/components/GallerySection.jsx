@@ -27,6 +27,16 @@ const GallerySection = ({ t }) => {
       alt: 'MAGNA Design',
       className: 'md:col-span-2',
     },
+    {
+      src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/i4g5ttso_Product_Photography_Argentina_s3K2u0w5.png',
+      alt: 'MAGNA Lifestyle',
+      className: '',
+    },
+    {
+      src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/chpjpf5e_Product_Photography_Argentina_7L3du-cG.png',
+      alt: 'MAGNA Premium',
+      className: '',
+    },
   ];
 
   return (
