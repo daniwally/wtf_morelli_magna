@@ -13,19 +13,21 @@ const ManifestoSection = ({ t }) => {
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
-      <div className="max-w-2xl mx-auto px-6 md:px-12">
-        {/* Main Title */}
+      {/* Title - Full Width */}
+      <div className="max-w-[1920px] mx-auto px-6 md:px-12 mb-16 md:mb-24">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.8 }}
-          className="font-playfair italic text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center text-[#F5F5F5] leading-tight mb-16 md:mb-24 whitespace-nowrap"
+          className="font-playfair italic text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center text-[#F5F5F5] leading-tight"
           data-testid="manifesto-title"
         >
           {t('manifesto.title')}
         </motion.h2>
+      </div>
 
+      <div className="max-w-2xl mx-auto px-6 md:px-12">
         {/* Manifesto Content */}
         <div className="space-y-4 md:space-y-6">
           {manifestoContent.map((paragraph, index) => (
