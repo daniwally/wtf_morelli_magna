@@ -37,7 +37,7 @@ const ManifestoSection = ({ t }) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.8, delay: index * 0.15 }}
-              className="font-playfair italic text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#E5E5E5] text-center"
+              className="font-playfair italic text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#E5E5E5]/80 text-center"
               style={{ lineHeight: '2.4' }}
               data-testid={`manifesto-paragraph-${index}`}
             >
