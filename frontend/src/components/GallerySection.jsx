@@ -5,7 +5,7 @@ const GallerySection = ({ t }) => {
     {
       src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/4q1oztdx_Product_Photography_Argentina_PFZvby25.png',
       alt: 'MAGNA Kitchen',
-      className: 'md:col-span-2',
+      className: '',
     },
     {
       src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/szz6qoe2_Product_Photography_Argentina_6MI5DyGd.png',
@@ -30,12 +30,12 @@ const GallerySection = ({ t }) => {
     {
       src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/i4g5ttso_Product_Photography_Argentina_s3K2u0w5.png',
       alt: 'MAGNA Lifestyle',
-      className: 'md:col-span-2',
+      className: '',
     },
     {
       src: 'https://customer-assets.emergentagent.com/job_magna-premium/artifacts/chpjpf5e_Product_Photography_Argentina_7L3du-cG.png',
       alt: 'MAGNA Premium',
-      className: '',
+      className: 'md:col-start-2',
     },
   ];
 
@@ -67,8 +67,8 @@ const GallerySection = ({ t }) => {
       </div>
 
       {/* Gallery Grid */}
-      <div className="max-w-[1920px] mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
           {galleryImages.map((image, index) => (
             <motion.div
               key={index}
@@ -83,12 +83,12 @@ const GallerySection = ({ t }) => {
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                  className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
                   loading="lazy"
                 />
               </div>
               {/* Overlay */}
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500" />
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
               {/* Border on hover */}
               <div className="absolute inset-0 border border-white/0 group-hover:border-white/20 transition-colors duration-500" />
             </motion.div>
