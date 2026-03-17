@@ -160,10 +160,10 @@ const ContactSection = ({ t, lang }) => {
             </label>
             <Select value={formData.product_interest} onValueChange={handleProductChange}>
               <SelectTrigger 
-                className="bg-transparent border-0 border-b border-white/20 rounded-none px-0 py-4 text-white focus:ring-0 h-auto"
+                className="bg-transparent border-0 border-b border-white/20 rounded-none px-0 py-4 text-white focus:ring-0 h-auto text-xs uppercase tracking-[0.2em]"
                 data-testid="contact-product-select"
               >
-                <SelectValue placeholder={t('contact.form.selectProduct')} />
+                <SelectValue placeholder={t('contact.form.selectProduct')} className="text-xs uppercase tracking-[0.2em] text-[#E5E5E5]/50" />
               </SelectTrigger>
               <SelectContent className="bg-[#121212] border-white/10">
                 {productOptions.map((option) => (
