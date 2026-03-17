@@ -35,7 +35,7 @@ const ManifestoSection = ({ t }) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.8, delay: index * 0.15 }}
-              className="font-manrope text-lg sm:text-xl md:text-2xl text-[#E5E5E5]/80 leading-snug text-center font-extralight"
+              className="font-manrope text-base sm:text-lg md:text-xl text-[#E5E5E5]/80 leading-snug text-center font-extralight"
               data-testid={`manifesto-paragraph-${index}`}
             >
               {paragraph}
