@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ["nodejs_20", "yarn"]
+
+[phases.install]
+cmds = ["yarn install --network-timeout 100000"]
+
+[phases.build]
+cmds = ["yarn build"]
+
+[start]
+cmd = "npx serve -s build -l ${PORT:-3000}"
