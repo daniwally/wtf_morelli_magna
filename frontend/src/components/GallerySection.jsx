@@ -45,12 +45,12 @@ const GallerySection = ({ t }) => {
           className="text-center"
         >
           <h2
-            className="font-playfair italic text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#F5F5F5] mb-2"
+            className="font-playfair italic text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#F5F5F5] mb-6"
             data-testid="gallery-title"
           >
             {t('gallery.subtitle')}
           </h2>
-          <span className="text-xs uppercase tracking-[0.4em] text-[#E5E5E5]/50 block">
+          <span className="text-sm md:text-base uppercase tracking-[0.4em] text-[#E5E5E5]/50 block">
             {t('gallery.title')}
           </span>
         </motion.div>
